@@ -1,6 +1,6 @@
 #!/bin/bash
   
-token=$( cat ~/developer-token.txt )
+token=$( cat developer-token.txt )
 host=$( oc get route jenkins -o jsonpath='{.spec.host}' )
 job="https://${host}/job/hello/job/master"
 
